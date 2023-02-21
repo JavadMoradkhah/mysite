@@ -1,0 +1,23 @@
+<button
+  x-on:click="menuIsOpen=!menuIsOpen"
+  class="p-1.5 md:hidden text-gray-700 dark:text-white border rounded-md hover:text-primary focus:text-primary focus:outline-none focus:ring focus:ring-indigo-300 focus:ring-opacity-80"
+>
+  <svg x-show="!menuIsOpen" class="w-7 h-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+    <path
+      fill="none"
+      stroke="currentColor"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="2"
+      d="M4 8h16M4 16h16"></path>
+  </svg>
+  <svg x-show="menuIsOpen" class="w-7 h-7" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+    <path
+      fill="none"
+      stroke="currentColor"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      stroke-width="32"
+      d="M368 368L144 144m224 0L144 368"></path></svg
+  >
+</button>

@@ -1,0 +1,17 @@
+---
+import Navigation from './nav/Navigation.astro';
+import ToggleBtn from './nav/ToggleBtn.astro';
+---
+
+<header x-data="{ menuIsOpen: false }">
+  <div class="h-1 bg-gradient-to-r from-primary to-pink-500"></div>
+  <div
+    class="relative max-w-6xl mx-auto px-4 py-3 md:py-4 flex flex-wrap items-center justify-between"
+  >
+    <a class="font-bold text-3xl text-primary" href="/">LOGO</a>
+    <div class="flex items-center">
+      <ToggleBtn />
+    </div>
+    <Navigation />
+  </div>
+</header>

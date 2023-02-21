@@ -1,0 +1,15 @@
+---
+import NavItem from './NavItem.astro';
+---
+
+<nav
+  class="w-full h-0 md:h-fit md:w-fit absolute md:static z-20 top-full left-0 right-0 bg-white dark:bg-dark md:bg-transparent transition-opacity opacity-0 md:opacity-100 duration-300 shadow-md md:shadow-none overflow-hidden"
+  x-bind:class="menuIsOpen ? 'h-fit opacity-100' : ''"
+>
+  <ul class="md:flex items-center p-4 md:p-0">
+    <NavItem href="#" title="Home" />
+    <NavItem href="#" title="About" />
+    <NavItem href="#" title="Services" />
+    <NavItem href="#" title="Contact" />
+  </ul>
+</nav>
