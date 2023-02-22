@@ -24,13 +24,15 @@ import Footer from '../components/layout/Footer.astro';
     <link rel="stylesheet" href="/styles/index.css" />
   </head>
 
-  <body>
+  <body class="dark:bg-dark text-white">
     <Header />
     <Hero />
     <About />
     <Services />
     <Portfolio />
     <Footer />
+
+    <script src="../js/index.js"></script>
     <script>
       import AOS from 'aos';
       AOS.init();
