@@ -1,0 +1,62 @@
+---
+import PortfolioItem from './PortfolioItem.astro';
+
+const projects = [
+  {
+    title: 'Ninja Food',
+    link: '#',
+    description:
+      'Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.',
+  },
+  {
+    title: 'Tapsi',
+    link: '#',
+    description:
+      'Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.',
+  },
+  {
+    title: 'Project #3',
+    link: '#',
+    description:
+      'Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.',
+  },
+  {
+    title: 'Project #4',
+    link: '#',
+    description:
+      'Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.',
+  },
+  {
+    title: 'Project #5',
+    link: '#',
+    description:
+      'Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.',
+  },
+  {
+    title: 'Project #6',
+    link: '#',
+    description:
+      'Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.',
+  },
+];
+---
+
+<section id="portfolio" class="text-gray-600 body-font">
+  <div class="max-w-6xl mx-auto px-4 py-12">
+    <div class="w-full mb-10 text-center">
+      <h2 class="text-sm text-secondary tracking-widest font-bold title-font uppercase mb-1">
+        Portfolio
+      </h2>
+      <h3 class="max-w-prose mx-auto leading-relaxed text-2xl text-gray-700">
+        Explore My Portfolio
+      </h3>
+    </div>
+    <ul class="md:grid md:grid-cols-2 gap-4 lg:grid-cols-3">
+      {
+        projects.map(({ title, link, description }) => (
+          <PortfolioItem title={title} link={link} description={description} />
+        ))
+      }
+    </ul>
+  </div>
+</section>
