@@ -1,0 +1,135 @@
+---
+const links = {
+  email: {
+    display: 'JavadMoradkhah.dev@gmail.com',
+    url: `mailto:JavadMoradkhah.dev@gmail.com`,
+  },
+  telegram: {
+    display: '@JavadMoradkhah',
+    url: 'https://t.me/JavadMoradkhah',
+  },
+  twitter: {
+    display: '@JMoradkhah',
+    url: 'https://twitter.com/JMoradkhah',
+  },
+  instagram: {
+    display: '@javadprogrammer',
+    url: 'https://www.instagram.com/javadprogrammer/',
+  },
+  linkedin: {
+    display: '@javad-moradkhah',
+    url: 'https://www.linkedin.com/in/javad-moradkhah',
+  },
+};
+---
+
+<section id="contact">
+  <div class="max-w-6xl mx-auto px-4 py-10">
+    <div class="w-full mb-6 text-center">
+      <h2 class="text-sm text-primary tracking-widest font-bold title-font uppercase mb-1">
+        Contact-US
+      </h2>
+      <h3 class="max-w-prose mx-auto leading-relaxed text-2xl text-gray-700 dark:text-gray-200">
+        Reach Us To Get Started
+      </h3>
+    </div>
+    <ul class="max-w-xs mx-auto">
+      <li>
+        <a class="flex items-center" href={links.email.url} target="_blank">
+          <span class="p-2 bg-rose-600 text-rose-600 bg-opacity-10 rounded-full">
+            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path
+                fill="currentColor"
+                d="M2 6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6zm3.519 0L12 11.671L18.481 6H5.52zM20 7.329l-7.341 6.424a1 1 0 0 1-1.318 0L4 7.329V18h16V7.329z"
+              >
+              </path>
+            </svg>
+          </span>
+          <span class="ml-2 text-gray-700 dark:text-white">{links.email.display}</span>
+        </a>
+      </li>
+
+      <li class="my-3">
+        <a class="flex items-center" href={links.telegram.url} target="_blank">
+          <span class="p-2 bg-blue-500 text-blue-500 bg-opacity-10 rounded-full">
+            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+              <path
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="1.5"
+                d="M21 5L2 12.5l7 1M21 5l-2.5 15L9 13.5M21 5L9 13.5m0 0V19l3.249-3.277"
+              >
+              </path>
+            </svg>
+          </span>
+          <span class="ml-2 text-gray-700 dark:text-white">{links.telegram.display}</span>
+        </a>
+      </li>
+
+      <li class="my-3">
+        <a class="flex items-center" href={links.instagram.url} target="_blank">
+          <span class="p-2 bg-secondary text-secondary bg-opacity-10 rounded-full">
+            <svg
+              fill="none"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="w-6 h-6"
+              viewBox="0 0 24 24"
+            >
+              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+            </svg>
+          </span>
+          <span class="ml-2 text-gray-700 dark:text-white">{links.instagram.display}</span>
+        </a>
+      </li>
+
+      <li class="my-3">
+        <a class="flex items-center" href={links.twitter.url} target="_blank">
+          <span class="p-2 bg-sky-500 text-sky-500 bg-opacity-10 rounded-full">
+            <svg
+              fill="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              class="w-6 h-6"
+              viewBox="0 0 24 24"
+            >
+              <path
+                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+              ></path>
+            </svg>
+          </span>
+          <span class="ml-2 text-gray-700 dark:text-white">{links.twitter.display}</span>
+        </a>
+      </li>
+
+      <li class="my-3">
+        <a class="flex items-center" href={links.linkedin.url} target="_blank">
+          <span class="p-2 bg-blue-600 text-blue-600 bg-opacity-10 rounded-full">
+            <svg
+              fill="currentColor"
+              stroke="currentColor"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="0"
+              class="w-6 h-6"
+              viewBox="0 0 24 24"
+            >
+              <path
+                stroke="none"
+                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+              ></path>
+              <circle cx="4" cy="4" r="2" stroke="none"></circle>
+            </svg>
+          </span>
+          <span class="ml-2 text-gray-700 dark:text-white">{links.linkedin.display}</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+</section>
