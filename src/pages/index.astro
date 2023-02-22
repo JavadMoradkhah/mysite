@@ -20,6 +20,7 @@ import Footer from '../components/layout/Footer.astro';
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
     <link rel="stylesheet" href="/styles/index.css" />
   </head>
 
@@ -30,5 +31,9 @@ import Footer from '../components/layout/Footer.astro';
     <Services />
     <Portfolio />
     <Footer />
+    <script>
+      import AOS from 'aos';
+      AOS.init();
+    </script>
   </body>
 </html>
