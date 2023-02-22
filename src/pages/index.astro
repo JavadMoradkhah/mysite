@@ -5,6 +5,7 @@ import About from '../components/layout/About.astro';
 import Services from '../components/layout/Services.astro';
 import Portfolio from '../components/layout/Portfolio.astro';
 import Footer from '../components/layout/Footer.astro';
+import '../styles/index.css';
 ---
 
 <html lang="en" x-data="darkMode" x-bind:class="darkMode ? 'dark' : ''">
@@ -21,7 +22,6 @@ import Footer from '../components/layout/Footer.astro';
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
-    <link rel="stylesheet" href="/styles/index.css" />
   </head>
 
   <body class="dark:bg-dark text-white">
