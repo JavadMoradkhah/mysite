@@ -1,10 +1,11 @@
 ---
 import NavItem from './NavItem.astro';
 import ContactBtn from './ContactBtn.astro';
+import DarkModeToggle from '../../DarkModeToggle.astro';
 ---
 
 <nav
-  class="w-full h-0 md:h-fit md:w-fit absolute md:static z-20 top-full left-0 right-0 bg-white dark:bg-dark md:bg-transparent transition-opacity opacity-0 md:opacity-100 duration-300 shadow-md md:shadow-none overflow-hidden"
+  class="w-full h-0 md:h-fit md:w-fit md:flex items-center absolute md:static z-20 top-full left-0 right-0 bg-white dark:bg-dark md:bg-transparent transition-opacity opacity-0 md:opacity-100 duration-300 shadow-md md:shadow-none overflow-hidden"
   x-bind:class="menuIsOpen ? 'h-fit opacity-100' : ''"
 >
   <ul class="md:flex items-center p-4 md:p-0">
@@ -14,4 +15,5 @@ import ContactBtn from './ContactBtn.astro';
     <NavItem href="#portfolio" title="Portfolio" />
     <ContactBtn href="#contact" title="Contact" />
   </ul>
+  <DarkModeToggle className="hidden md:block ml-3" />
 </nav>

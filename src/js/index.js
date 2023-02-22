@@ -1,7 +1,7 @@
 import AOS from 'aos';
 
 function isDarkMode() {
-  return localStorage.getItem('darkMode') || false;
+  return localStorage.getItem('darkMode') === 'true' ? true : false;
 }
 
 function setDarkMode(enabled = false) {
@@ -9,3 +9,13 @@ function setDarkMode(enabled = false) {
 }
 
 AOS.init();
+
+document.addEventListener('alpine:init', () => {
+  Alpine.data('darkMode', () => ({
+    darkMode: isDarkMode(),
+    toggleDarkMode() {
+      this.darkMode = !this.darkMode;
+      setDarkMode(this.darkMode);
+    },
+  }));
+});
