@@ -1,10 +1,11 @@
 ---
+import SecondaryLink from '../../common/SecondaryLink.astro';
 const { href, title } = Astro.props;
 ---
 
-<li class="w-fit bg-secondary rounded-lg mt-3 md:mt-0 md:ml-3 hover:bg-pink-700">
-  <a class="flex items-center px-3 py-2 text-white" href={href}>
-    <span class="mr-1">{title}</span>
+<li class="w-fit rounded-lg mt-3 md:mt-0 md:ml-3">
+  <SecondaryLink link={href}>
+    <span class="mr-1 text-sm">{title}</span>
     <svg class="w-5 h-5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
       <path
         fill="currentColor"
@@ -12,5 +13,7 @@ const { href, title } = Astro.props;
       >
       </path>
     </svg>
-  </a>
+  </SecondaryLink>
+
+  <!-- <a class="flex items-center px-3 py-2 text-white" href={href}> -->
 </li>

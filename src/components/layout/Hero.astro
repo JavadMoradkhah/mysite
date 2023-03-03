@@ -1,36 +1,33 @@
 ---
+import PrimaryLink from '../common/PrimaryLink.astro';
 ---
 
 <style>
   .heading {
-    background: -webkit-linear-gradient(45deg, #4f46e5, #c026d3);
+    background: -webkit-linear-gradient(45deg, #0c7db9, #3bd6c9);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
 </style>
 
 <section>
-  <div class="max-w-6xl mx-auto px-8 md:px-4 py-10 md:py-14 md:grid grid-cols-2">
+  <div class="max-w-6xl mx-auto px-8 md:px-4 py-10 md:py-14 grid grid-cols-1 md:grid-cols-2">
     <div data-aos="fade-right" class="mb-5 md:mt-0 md:flex flex-col justify-center items-start">
       <h1
         class="heading font-extrabold text-3xl md:text-4xl lg:text-5xl max-w-[20ch] leading-tight text-primary"
       >
         Transform Your Online Presence with Fast and Modern Websites!
       </h1>
-      <p class="my-5 max-w-prose text-gray-600 dark:text-gray-200">
-        Your online presence is your voice in the digital world. Let us help you make it heard! With
-        us, you can take your business or personal brand to the next level. Let's work together to
-        bring your vision to life and make your mark on the web. The possibilities are endless, so
-        let's get started today!
+      <p class="my-5 max-w-prose text-gray-600 dark:text-gray-400">
+        Your online presence is your voice in the digital world. Let me help you make it heard! I
+        will take your business or personal brand to the next level. Let's work together to bring
+        your vision to life and make your mark on the web. The possibilities are endless, so let's
+        get started today!
       </p>
-      <button
-        class="px-3 py-2 font-medium tracking-wide text-white capitalize transition-colors duration-300 transform bg-primary rounded-lg hover:bg-indigo-800 focus:outline-none focus:ring focus:ring-indigo-300 focus:ring-opacity-80"
-      >
-        Get Started
-      </button>
+      <PrimaryLink link="#contact">Hire Me</PrimaryLink>
     </div>
-    <div data-aos="fade-left">
-      <img src="hero.svg" alt="Hero Image" />
+    <div data-aos="fade-left" class="-order-1 md:order-[0] px-[20%] mb-6">
+      <img src="me.png" alt="Hero Image" />
     </div>
   </div>
 </section>

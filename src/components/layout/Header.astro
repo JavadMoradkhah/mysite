@@ -5,11 +5,13 @@ import DarkModeToggle from '../DarkModeToggle.astro';
 ---
 
 <header x-data="{ menuIsOpen: false }">
-  <div class="h-1 bg-gradient-to-r from-primary to-pink-500"></div>
+  <div class="h-1 bg-gradient-to-r from-primary to-cyan-400"></div>
   <div
     class="relative max-w-6xl mx-auto px-4 py-3 md:py-4 flex flex-wrap items-center justify-between"
   >
-    <a class="font-bold text-3xl text-primary" href="/">LOGO</a>
+    <a class="w-16" href="/">
+      <img src="logo.svg" alt="Logo" />
+    </a>
     <div class="flex items-center">
       <DarkModeToggle className="md:hidden mr-3" />
       <ToggleBtn />
