@@ -1,0 +1,14 @@
+---
+const { link } = Astro.props;
+---
+
+<a
+  href={link}
+  class="group block w-fit h-fit font-medium tracking-wide text-white text-lg capitalize border border-secondary rounded-sm focus:outline-none"
+>
+  <span
+    class="flex items-center relative px-4 py-2 bg-secondary rounded-sm transition-transform duration-150 group-hover:translate-x-[3px] group-hover:translate-y-[-3px]"
+  >
+    <slot />
+  </span>
+</a>
