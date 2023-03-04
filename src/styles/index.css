@@ -92,14 +92,17 @@ body {
   @apply cursor-pointer block m-0 absolute z-10 top-[50%] p-2 bg-primary bg-opacity-25 rounded-full border-8 border-dark;
 }
 
+.swiper-button-lock {
+  @apply hidden;
+}
+
+.swiper-pagination-lock {
+  @apply !hidden;
+}
+
 .swiper-button-prev::after,
 .swiper-button-next::after {
   content: '';
-}
-
-.swiper-button-prev:disabled,
-.swiper-button-next:disabled {
-  @apply opacity-25 border-8 border-dark;
 }
 
 .swiper-pagination {
