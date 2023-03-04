@@ -80,16 +80,16 @@ body {
 
 /* Swiper */
 .swiper-button-prev {
-  @apply left-0 md:translate-x-[-50%];
+  @apply left-0 xl:translate-x-[-50%];
 }
 
 .swiper-button-next {
-  @apply right-0 md:translate-x-[50%];
+  @apply right-0 xl:translate-x-[50%];
 }
 
 .swiper-button-prev,
 .swiper-button-next {
-  @apply cursor-pointer block m-0 absolute z-10 top-[50%] p-2 bg-primary bg-opacity-25 rounded-full border-8 border-dark;
+  @apply cursor-pointer block m-0 absolute z-10 top-[50%] p-2 bg-primary bg-opacity-25 rounded-full border-[6px] border-dark;
 }
 
 .swiper-button-lock {
