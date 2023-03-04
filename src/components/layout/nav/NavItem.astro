@@ -2,9 +2,8 @@
 const { href, title } = Astro.props;
 ---
 
-<li class="border-b border-gray-100 dark:border-gray-800 md:border-none last-of-type:border-none">
-  <a
-    class="block px-1 py-2 md:p-2 text-sm text-gray-500 dark:text-gray-300 hover:text-secondary dark:hover:text-secondary"
-    href={href}>{title}</a
+<li class="border-b border-gray-800 md:border-none last-of-type:border-none">
+  <a class="block px-1 py-2 md:p-2 text-sm text-gray-300 hover:text-secondary" href={href}
+    >{title}</a
   >
 </li>

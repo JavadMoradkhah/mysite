@@ -34,22 +34,4 @@ const swiper = new Swiper('.testimonials-swiper', {
   },
 });
 
-function isDarkMode() {
-  return localStorage.getItem('darkMode') === 'true' ? true : false;
-}
-
-function setDarkMode(enabled = false) {
-  localStorage.setItem('darkMode', enabled);
-}
-
 AOS.init();
-
-document.addEventListener('alpine:init', () => {
-  Alpine.data('darkMode', () => ({
-    darkMode: isDarkMode(),
-    toggleDarkMode() {
-      this.darkMode = !this.darkMode;
-      setDarkMode(this.darkMode);
-    },
-  }));
-});

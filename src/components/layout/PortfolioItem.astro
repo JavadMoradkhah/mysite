@@ -3,12 +3,12 @@ const { title, description, link } = Astro.props;
 ---
 
 <li
-  class="p-3 md:px-8 md:py-6 transition-colors duration-300 border-l-2 border-gray-200 dark:border-gray-800 border-opacity-60"
+  class="p-3 md:px-8 md:py-6 transition-colors duration-300 border-l-2 border-gray-800 border-opacity-60"
 >
-  <h2 class="text-lg sm:text-xl text-gray-800 dark:text-gray-200 font-medium title-font mb-2">
+  <h2 class="text-lg sm:text-xl text-gray-200 font-medium title-font mb-2">
     {title}
   </h2>
-  <p class="leading-relaxed text-base text-gray-600 dark:text-gray-300 line-clamp-3 mb-2">
+  <p class="leading-relaxed text-base text-gray-300 line-clamp-3 mb-2">
     {description}
   </p>
   <a class="py-2 text-secondary inline-flex items-center" href={link} target="_blank">

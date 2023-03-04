@@ -1,7 +1,6 @@
 ---
 import Navigation from './nav/Navigation.astro';
 import ToggleBtn from './nav/ToggleBtn.astro';
-import DarkModeToggle from '../DarkModeToggle.astro';
 ---
 
 <header x-data="{ menuIsOpen: false }">
@@ -13,7 +12,6 @@ import DarkModeToggle from '../DarkModeToggle.astro';
       <img src="logo.svg" alt="Logo" />
     </a>
     <div class="flex items-center">
-      <DarkModeToggle className="md:hidden mr-3" />
       <ToggleBtn />
     </div>
     <Navigation />

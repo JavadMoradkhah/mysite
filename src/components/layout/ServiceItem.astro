@@ -2,9 +2,7 @@
 const { title, description } = Astro.props;
 ---
 
-<div
-  class="relative p-6 dark:bg-dark-lighter border dark:border-dark-lighter rounded-md overflow-hidden"
->
+<div class="relative p-6 bg-dark-lighter border border-dark-lighter rounded-md overflow-hidden">
   <span class="service-border"></span>
   <span class="service-border"></span>
   <span class="service-border"></span>
@@ -15,8 +13,8 @@ const { title, description } = Astro.props;
     >
       <slot />
     </div>
-    <h2 class="text-primary dark:text-gray-200 title-font font-bold my-2">{title}</h2>
-    <p class="text-gray-600 dark:text-gray-400 leading-relaxed text-xs lg:text-base">
+    <h2 class="text-primary title-font font-bold my-2">{title}</h2>
+    <p class="text-gray-400 leading-relaxed text-xs lg:text-base">
       {description}
     </p>
     <a class="mt-1 py-2 flex items-center text-primary text-sm font-medium" href="#">
