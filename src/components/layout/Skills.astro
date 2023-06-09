@@ -1,0 +1,109 @@
+---
+import Icon from '../common/Icon.astro';
+
+const skills = [
+  {
+    iconName: 'wordpress',
+    name: 'WordPress',
+  },
+  {
+    iconName: 'html',
+    name: 'Html',
+  },
+  {
+    iconName: 'css',
+    name: 'Css',
+  },
+  {
+    iconName: 'tailwindcss',
+    name: 'Tailwindcss',
+  },
+  {
+    iconName: 'javascript',
+    name: 'JavaScript',
+  },
+  {
+    iconName: 'typescript',
+    name: 'TypeScript',
+  },
+  {
+    iconName: 'python',
+    name: 'Python',
+  },
+  {
+    iconName: 'react',
+    name: 'ReactJs',
+  },
+  {
+    iconName: 'alpinejs',
+    name: 'AlpineJs',
+  },
+  {
+    iconName: 'astro',
+    name: 'Astro',
+  },
+  {
+    iconName: 'nodejs',
+    name: 'NodeJs',
+  },
+  {
+    iconName: 'expressjs',
+    name: 'ExpressJs',
+  },
+  {
+    iconName: 'mongodb',
+    name: 'MongoDB',
+  },
+  {
+    iconName: 'mysql',
+    name: 'MySQL',
+  },
+  {
+    iconName: 'postgresql',
+    name: 'PostgreSQL',
+  },
+  {
+    iconName: 'redis',
+    name: 'Redis',
+  },
+  {
+    iconName: 'git',
+    name: 'Git',
+  },
+  {
+    iconName: 'github',
+    name: 'GitHub',
+  },
+  {
+    iconName: 'bash',
+    name: 'Bash',
+  },
+  {
+    iconName: 'docker',
+    name: 'Docker',
+  },
+];
+---
+
+<section id="skills" data-aos="fade-up">
+  <div class="max-w-6xl mx-auto px-6 xl:px-0 py-16 body-font relative">
+    <div class="w-full mb-10 text-center">
+      <h2 class="text-sm text-primary tracking-widest font-bold title-font uppercase mb-1">
+        My Skills
+      </h2>
+      <h3 class="max-w-prose mx-auto leading-relaxed text-xl md:text-2xl text-gray-200">
+        What I've learned throughout my journey so far
+      </h3>
+    </div>
+    <ul class="grid gap-1 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
+      {
+        skills.map(({ iconName, name }) => (
+          <li class="p-4 flex items-center bg-dark-lighter rounded-sm">
+            <Icon iconName={iconName} className="w-8 h-8" />
+            <h4 class="ml-2 text-gray-300">{name}</h4>
+          </li>
+        ))
+      }
+    </ul>
+  </div>
+</section>
