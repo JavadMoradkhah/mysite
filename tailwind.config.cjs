@@ -8,6 +8,9 @@ module.exports = {
         secondary: { DEFAULT: '#00B4D8', darker: '#039BB9' },
         dark: { DEFAULT: '#0F1729', lighter: '#111A2E' },
       },
+      screens: {
+        sm: '320px',
+      },
     },
   },
   plugins: [require('@tailwindcss/line-clamp')],
