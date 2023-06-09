@@ -91,16 +91,16 @@ const skills = [
       <h2 class="text-sm text-primary tracking-widest font-bold title-font uppercase mb-1">
         My Skills
       </h2>
-      <h3 class="max-w-prose mx-auto leading-relaxed text-xl md:text-2xl text-gray-200">
+      <h3 class="max-w-prose mx-auto leading-relaxed text-lg md:text-2xl text-gray-200">
         What I've learned throughout my journey so far
       </h3>
     </div>
-    <ul class="grid gap-1 grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5">
+    <ul class="grid gap-1 sm:grid-cols-2 md:grid-cols-4 lg:grid-cols-5">
       {
         skills.map(({ iconName, name }) => (
-          <li class="p-4 flex items-center bg-dark-lighter rounded-sm">
+          <li class="p-3 md:p-4 flex items-center bg-dark-lighter rounded-sm">
             <Icon iconName={iconName} className="w-8 h-8" />
-            <h4 class="ml-2 text-gray-300">{name}</h4>
+            <h4 class="ml-2 text-gray-300 text-xs md:text-base">{name}</h4>
           </li>
         ))
       }
