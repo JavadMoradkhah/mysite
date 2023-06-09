@@ -1,133 +1,150 @@
 ---
 const links = {
   email: {
-    display: 'JavadMoradkhah.dev@gmail.com',
     url: `mailto:JavadMoradkhah.dev@gmail.com`,
   },
   telegram: {
-    display: '@JavadMoradkhah',
     url: 'https://t.me/JavadMoradkhah',
   },
   twitter: {
-    display: '@JMoradkhah',
     url: 'https://twitter.com/JMoradkhah',
   },
   instagram: {
-    display: '@javadprogrammer',
     url: 'https://www.instagram.com/javadprogrammer/',
   },
   linkedin: {
-    display: '@javad-moradkhah',
     url: 'https://www.linkedin.com/in/javad-moradkhah',
+  },
+  github: {
+    url: 'https://github.com/JavadMoradkhah',
   },
 };
 ---
 
 <section id="contact">
-  <div class="max-w-6xl mx-auto px-4 py-10">
+  <div class="max-w-6xl mx-auto px-4 py-20">
     <div class="w-full mb-6 text-center">
       <h2 class="text-sm text-primary tracking-widest font-bold title-font uppercase mb-1">
         Contact-US
       </h2>
-      <h3 class="max-w-prose mx-auto leading-relaxed text-2xl text-gray-200">
+      <h3 class="max-w-prose mx-auto leading-relaxed text-sm md:text-2xl text-gray-200">
         Reach Me To Get Started
       </h3>
     </div>
-    <ul class="max-w-xs mx-auto">
-      <li>
-        <a class="flex items-center" href={links.email.url} target="_blank">
-          <span class="p-2 bg-rose-600 text-rose-600 bg-opacity-10 rounded-full">
-            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-              <path
-                fill="currentColor"
-                d="M2 6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6zm3.519 0L12 11.671L18.481 6H5.52zM20 7.329l-7.341 6.424a1 1 0 0 1-1.318 0L4 7.329V18h16V7.329z"
-              >
-              </path>
-            </svg>
-          </span>
-          <span class="ml-2 text-white">{links.email.display}</span>
+    <ul class="w-fit gap-2 mx-auto grid grid-cols-3 lg:grid-cols-6">
+      <li class="hover:animate-bounce">
+        <a
+          class="block w-fit p-3 bg-rose-600 text-rose-600 bg-opacity-10 rounded-md"
+          href={links.email.url}
+          target="_blank"
+        >
+          <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
+              fill="currentColor"
+              d="M2 6a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6zm3.519 0L12 11.671L18.481 6H5.52zM20 7.329l-7.341 6.424a1 1 0 0 1-1.318 0L4 7.329V18h16V7.329z"
+            >
+            </path>
+          </svg>
         </a>
       </li>
 
-      <li class="my-3">
-        <a class="flex items-center" href={links.telegram.url} target="_blank">
-          <span class="p-2 bg-blue-500 text-blue-500 bg-opacity-10 rounded-full">
-            <svg class="w-6 h-6" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
-              <path
-                fill="none"
-                stroke="currentColor"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                stroke-width="1.5"
-                d="M21 5L2 12.5l7 1M21 5l-2.5 15L9 13.5M21 5L9 13.5m0 0V19l3.249-3.277"
-              >
-              </path>
-            </svg>
-          </span>
-          <span class="ml-2 text-white">{links.telegram.display}</span>
-        </a>
-      </li>
-
-      <li class="my-3">
-        <a class="flex items-center" href={links.instagram.url} target="_blank">
-          <span class="p-2 bg-pink-600 text-pink-600 bg-opacity-10 rounded-full">
-            <svg
+      <li class="hover:animate-bounce">
+        <a
+          class="block w-fit p-3 bg-blue-500 text-blue-500 bg-opacity-10 rounded-md"
+          href={links.telegram.url}
+          target="_blank"
+        >
+          <svg class="w-8 h-8" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+            <path
               fill="none"
               stroke="currentColor"
               stroke-linecap="round"
               stroke-linejoin="round"
-              stroke-width="2"
-              class="w-6 h-6"
-              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              d="M21 5L2 12.5l7 1M21 5l-2.5 15L9 13.5M21 5L9 13.5m0 0V19l3.249-3.277"
             >
-              <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
-              <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
-            </svg>
-          </span>
-          <span class="ml-2 text-white">{links.instagram.display}</span>
+            </path>
+          </svg>
         </a>
       </li>
 
-      <li class="my-3">
-        <a class="flex items-center" href={links.twitter.url} target="_blank">
-          <span class="p-2 bg-sky-500 text-sky-500 bg-opacity-10 rounded-full">
-            <svg
-              fill="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              class="w-6 h-6"
-              viewBox="0 0 24 24"
-            >
-              <path
-                d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
-              ></path>
-            </svg>
-          </span>
-          <span class="ml-2 text-white">{links.twitter.display}</span>
+      <li class="hover:animate-bounce">
+        <a
+          class="block w-fit p-3 bg-pink-600 text-pink-600 bg-opacity-10 rounded-md"
+          href={links.instagram.url}
+          target="_blank"
+        >
+          <svg
+            fill="none"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            class="w-8 h-8"
+            viewBox="0 0 24 24"
+          >
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"></path>
+          </svg>
         </a>
       </li>
 
-      <li class="my-3">
-        <a class="flex items-center" href={links.linkedin.url} target="_blank">
-          <span class="p-2 bg-blue-600 text-blue-600 bg-opacity-10 rounded-full">
-            <svg
-              fill="currentColor"
-              stroke="currentColor"
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="0"
-              class="w-6 h-6"
-              viewBox="0 0 24 24"
-            >
-              <path
-                stroke="none"
-                d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
-              ></path>
-              <circle cx="4" cy="4" r="2" stroke="none"></circle>
-            </svg>
-          </span>
-          <span class="ml-2 text-white">{links.linkedin.display}</span>
+      <li class="hover:animate-bounce">
+        <a
+          class="block w-fit p-3 bg-sky-500 text-sky-500 bg-opacity-10 rounded-md"
+          href={links.twitter.url}
+          target="_blank"
+        >
+          <svg
+            fill="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            class="w-8 h-8"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+            ></path>
+          </svg>
+        </a>
+      </li>
+
+      <li class="hover:animate-bounce">
+        <a
+          class="block w-fit p-3 bg-blue-600 text-blue-600 bg-opacity-10 rounded-md"
+          href={links.linkedin.url}
+          target="_blank"
+        >
+          <svg
+            fill="currentColor"
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="0"
+            class="w-8 h-8"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke="none"
+              d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+            ></path>
+            <circle cx="4" cy="4" r="2" stroke="none"></circle>
+          </svg>
+        </a>
+      </li>
+
+      <li class="hover:animate-bounce">
+        <a
+          class="block w-fit p-3 bg-white text-white bg-opacity-10 rounded-md"
+          href={links.github.url}
+          target="_blank"
+        >
+          <svg class="w-8 h-8" viewBox="0 0 25 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M12.5001 0C5.59738 0 0 5.59625 0 12.5001C0 18.023 3.58162 22.7085 8.54838 24.3614C9.173 24.4771 9.40238 24.0902 9.40238 23.7601C9.40238 23.462 9.39075 22.4774 9.38538 21.4329C5.90788 22.189 5.17412 19.958 5.17412 19.958C4.60537 18.5131 3.78613 18.129 3.78613 18.129C2.652 17.3531 3.87162 17.3691 3.87162 17.3691C5.12687 17.4573 5.78788 18.6572 5.78788 18.6572C6.90275 20.5682 8.71213 20.0157 9.42537 19.6964C9.53762 18.8884 9.8615 18.337 10.219 18.0249C7.4425 17.7088 4.524 16.6369 4.524 11.8472C4.524 10.4825 5.01225 9.36737 5.81188 8.492C5.682 8.17712 5.25412 6.90575 5.93287 5.184C5.93287 5.184 6.98263 4.848 9.37138 6.46525C10.3685 6.18838 11.4378 6.0495 12.5001 6.04475C13.5624 6.0495 14.6326 6.18837 15.6315 6.46537C18.0174 4.848 19.0656 5.18412 19.0656 5.18412C19.746 6.90575 19.318 8.17725 19.1881 8.492C19.9896 9.36737 20.4746 10.4825 20.4746 11.8472C20.4746 16.6484 17.5504 17.7055 14.7669 18.0149C15.2152 18.4029 15.6147 19.1635 15.6147 20.3298C15.6147 22.0023 15.6003 23.3484 15.6003 23.7601C15.6003 24.0927 15.8253 24.4825 16.4589 24.3598C21.4229 22.705 25 18.0211 25 12.5001C25 5.59638 19.4034 0 12.5001 0ZM4.68175 17.8066C4.65425 17.8688 4.5565 17.8874 4.4675 17.8447C4.37675 17.804 4.32587 17.7192 4.35525 17.657C4.38212 17.593 4.48013 17.5753 4.5705 17.6181C4.66138 17.6589 4.71313 17.7444 4.68175 17.8066ZM5.29663 18.3552C5.237 18.4106 5.12038 18.3849 5.04138 18.2975C4.95963 18.2104 4.94425 18.0939 5.00475 18.0378C5.06613 17.9825 5.17925 18.0084 5.26112 18.0955C5.34287 18.1838 5.35888 18.2994 5.29663 18.3552ZM5.71838 19.0572C5.64175 19.1105 5.5165 19.0606 5.43913 18.9494C5.3625 18.8383 5.3625 18.705 5.44075 18.6515C5.51838 18.5981 5.64175 18.6461 5.72025 18.7565C5.79663 18.8695 5.79663 19.0029 5.71838 19.0572ZM6.43175 19.8703C6.36325 19.9458 6.21738 19.9255 6.1105 19.8224C6.00125 19.7216 5.97075 19.5786 6.0395 19.503C6.10888 19.4273 6.25562 19.4486 6.36325 19.5509C6.47175 19.6514 6.50488 19.7955 6.43175 19.8703ZM7.35375 20.1446C7.3235 20.2426 7.183 20.2871 7.04138 20.2455C6.90013 20.2026 6.8075 20.088 6.83613 19.989C6.8655 19.8905 7.00663 19.8441 7.14925 19.8886C7.2905 19.9312 7.38313 20.0451 7.35375 20.1446ZM8.403 20.2611C8.4065 20.3641 8.2865 20.4496 8.13787 20.4515C7.98837 20.4549 7.8675 20.3714 7.86588 20.27C7.86588 20.1659 7.98325 20.0813 8.13262 20.0788C8.28137 20.0759 8.403 20.1586 8.403 20.2611ZM9.43375 20.2216C9.45163 20.3221 9.34838 20.4255 9.20075 20.453C9.05563 20.4795 8.92125 20.4174 8.90287 20.3176C8.88487 20.2145 8.99 20.1112 9.13488 20.0845C9.28275 20.0589 9.415 20.1194 9.43375 20.2216Z"
+              fill="currentColor"></path>
+          </svg>
         </a>
       </li>
     </ul>
